@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editordeleteactivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:id="@+id/image1"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/imgaddactivity" />
+
+    <EditText
+        android:id="@+id/word1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Word"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="5dp"
+        android:inputType="text|textLongMessage"
+        android:background="#ffffff"
+        android:longClickable="false"
+        android:textColor="#000000" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_anchor="@+id/toolbar"
+        app:layout_anchorGravity="bottom|center"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleTextColor="@color/white" />
+
+    <EditText
+        android:id="@+id/translate1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/word1"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Translation"
+        android:background="#ffffff"
+        android:inputType="text|textLongMessage"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="15pt"
+        android:layout_height="15pt"
+        android:layout_alignEnd="@+id/toolbar"
+        android:layout_alignRight="@+id/toolbar"
+        android:layout_alignBottom="@id/toolbar"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:background="@drawable/trash" />
+
+    <Button
+        android:id="@+id/edit"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="15pt"
+        android:layout_height="15pt"
+        android:layout_alignEnd="@+id/toolbar"
+        android:layout_alignRight="@+id/toolbar"
+        android:layout_alignBottom="@id/toolbar"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:drawable/ic_menu_edit" />
+
+    <include layout="@layout/content_editordeleteactivity" />
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EasyCard</string>
+    <string name="action_settings">Start QUIZ</string>
+    <string name="action_deleteall"> Delete all</string>
+    <string name="title_activity_add">Add new card</string>
+    <string name="title_activity_startquiz"> QUIZ </string>
+    <string name="title_activity_resultactivity">resultactivity</string>
+    <string name="title_activity_infoactivity">Info</string>
+    <string name="title_activity_editordeleteactivity">Change word</string>
+</resources>

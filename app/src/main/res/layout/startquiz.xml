@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartquizActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_startquiz" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Finish"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        android:id="@+id/fab"
+        android:background="@drawable/okrugl_button"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="256dp"
+        android:id="@+id/image1"
+        android:layout_centerInParent="true"
+        android:background="@drawable/imgview" />
+
+    <TextView
+        android:id="@+id/slovo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="25dp"
+        android:text="Slovo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image1"
+        android:layout_centerHorizontal="true"
+        android:text="Tap to see translation" />
+
+    <Button
+        android:id="@+id/no1"
+        android:layout_width="60dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/textView"
+        android:layout_toStartOf="@+id/textView"
+        android:layout_toLeftOf="@+id/textView"
+        android:background="@drawable/oval_red"
+        android:layout_marginTop="50dp"
+        android:text="✖"
+        android:textSize="20dp"
+        android:textColor="@color/cardview_light_background"
+        app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    <Button
+        android:id="@+id/yes1"
+        android:layout_width="60dp"
+        android:layout_height="58dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="50dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
+        android:background="@drawable/oval_button"
+        android:text="✓"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/quesNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/image1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+</RelativeLayout>
