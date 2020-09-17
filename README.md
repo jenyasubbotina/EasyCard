@@ -7,5 +7,7 @@ Give the application permission to write and read files from external storage (a
 
 ![EasyCard](https://github.com/jenyasubbotina/easycard/blob/master/src_r/easycard1.png)
 
+You can add any word and translation too.
+![EasyCard](https://github.com/jenyasubbotina/easycard/blob/master/src_r/s1.jpg)
 
 Caution! High content of shit-code!!!
