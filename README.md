@@ -5,6 +5,10 @@ You can download this app here:
 
 https://drive.google.com/file/d/1kNN4rFbRExaBCJQHOGA1wSiwk-JsqOeo/view?usp=sharing
 
+Or here (my tg channel):
+
+https://t.me/mylocalhome/386
+
 Don't try to open this application anywhere except Android Studio, otherwise you will receive error messages.
 
 Give the application permission to write and read files from external storage (app will request it itself).
