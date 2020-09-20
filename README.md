@@ -3,7 +3,7 @@ Beta-app for learning new words.
 
 You can download this app here: 
 
-https://goo-gl.su/lKGgYCUW
+https://goo-gl.su/jenyasubbotina_easycard
 
 Or here (my tg channel):
 
